@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Si me clickeas dos veces, desapareceré.</p>
+    <p>¡Yo también!</p>
+    <p>¡Yo también!</p>
+    <img src="assets/img/perro.jpg" alt="perro" height="100px" />
+
+    <img id="imagen" src="assets/img/perro2.jpg" alt="perro2" height="100px" />
+
+    <h1 class="centrado">Hola, soy centrado</h1>
+
+    <img
+      id="imagen"
+      class="centrado"
+      src="assets/img/perro3.jpg"
+      alt="dingo"
+      height="300px"
+    />
+
+    <p class="encabezado">esto es un enlace <a href="#"></a></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("p").dblclick(function () {
+          $(this).hide("slow");
+        });
+
+        $("p").click(function () {
+          $(this).css({
+            color: "red",
+            "font-size": "2em",
+          });
+        });
+
+        $("p").hover(function () {
+          $(this).html("<a href='#'>Me convertí</a>");
+        });
+
+        $("img").dblclick(function () {
+          $(this).hide("slow");
+        });
+
+        $("#imagen").dblclick(function () {
+          $(this).hide("slow");
+        });
+
+        $(".centrado").click(function () {
+          $(this).css({
+            color: "red",
+          });
+        });
+
+        $("#imagen .centrado img").dblclick(function () {
+          $(this).hide("slow");
+        });
+
+        $(".encabezado a").click(function () {
+          $(this).css({
+            color: "red",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

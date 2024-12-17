@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*BODY*/
+body {
+
+    /*Colores generales*/
+    background-color: #000000;
+    color: #ffffff;
+
+    /*Texto General*/
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;    
+}
+
+/*HEADER*/
+header {
+    background-color: black;
+    color: white;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+/*SECCION 1*/
+#iguana img {
+    width: 100%;
+}
+
+/*SECCION 2*/
+/* DESCRIPCION DE LA IGUANA */
+
+#iguanas-descripcion {
+    padding: 50px 150px;
+    padding-bottom: 70px;
+    color: white;
+}
+
+#iguanas-descripcion img {
+    width: 400px;
+}
+
+#iguanas-descripcion .descripcion, img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#iguanas-descripcion .descripcion {
+    text-align: left;
+    font-size: 15px;
+    width: 50%;
+    margin-right: 115px;
+}
+
+
+/*SECCION 3*/
+#caracteristicas {
+    background-color: #1E1A13;
+    padding: 80px 120px;
+}
+
+#caracteristicas h2 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+#caracteristicas article {
+    display: inline-block;
+    margin: 0px 100px;
+    font-size: 25px;
+}
+
+#caracteristicas article i {
+    margin-bottom: 45px;
+}
+
+#caracteristicas article h3 {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+/*SECCION 4*/
+#fotos {
+    padding: 73px 150px;
+}
+
+#fotos article {
+    display: inline-block;
+}
+
+#fotos article img {
+    height: 202px;
+    margin: 0px 5px;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1E1A13;
+    padding: 30px 0px;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: lighter;
+}

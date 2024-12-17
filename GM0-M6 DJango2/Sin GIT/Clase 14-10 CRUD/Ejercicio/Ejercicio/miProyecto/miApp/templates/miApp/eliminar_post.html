@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listado de Posts</title>
+  </head>
+  <body>
+    <h1>Listado de Posts</h1>
+
+    <a href="{% url 'crear_post' %}">Crear nuevo post</a>
+
+    <ul>
+      {% for post in posts %}
+      <li>
+        <h2>{{ post.titulo }}</h2>
+        <p>{{ post.contenido }}</p>
+        <p>
+          <strong>Fecha de publicación:</strong> {{ post.fecha_publicacion }}
+        </p>
+
+        <a href="{% url 'actualizar_post' post.id %}">Editar</a> |
+        <a
+          href="{% url 'eliminar_post' post.id %}"
+          onclick="return confirm('¿Estás seguro de que deseas eliminar este post?');"
+        >
+          Eliminar
+        </a>
+      </li>
+      {% empty %}
+      <p>No hay posts disponibles.</p>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

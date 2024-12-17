@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*Body General*/
+body {
+  background-color: #ffffff;
+  font-family: Cabin;
+}
+
+/*Barra de navegacion*/
+#navegacion {
+  background-color: #373a3c;
+}
+
+#navegacion a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#navegacion h3 {
+  font-family: Lobster, Regular;
+  font-size: 37pt;
+}
+
+/*header*/
+#imagen img {
+  width: 384pt;
+}
+
+.botones {
+  display: inline-block;
+}
+
+#enviar-correo #favoritos {
+  color: #373a3c;
+}
+
+/*carrusel*/
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel-indicators button.unselected {
+  background-color: #373a3c31;
+}
+.carousel-indicators button.active {
+  background-color: #373a3c;
+}
+
+/*recetas*/
+#recetas .receta1 hr {
+  width: 12ch;
+}
+
+#recetas .receta2 hr {
+  width: 12ch;
+}
+
+/* recetas relacionadas */
+#recetas-relacionadas {
+  background-color: #ffffff;
+}
+
+#recetas-relacionadas .image-top {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*cards*/
+.card {
+  height: 100%;
+}
+
+/*Newsletter*/
+#newsletter {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.ricomida {
+  font-family: Lobster, Regular;
+}
+
+.descripcion,
+.ricomida {
+  display: inline;
+}
+
+/*footer*/
+.foot {
+  background-color: #373a3c;
+}
+
+.foot h3 {
+  font-family: Lobster, Regular;
+  color: #ffffff;
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/

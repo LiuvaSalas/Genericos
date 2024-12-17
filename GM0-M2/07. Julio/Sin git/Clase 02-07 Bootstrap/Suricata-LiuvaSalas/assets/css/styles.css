@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*BARRA DE NAVEGACION*/
+#navegacion {
+  background-color: #e83e8c;
+  color: #ffffff;
+}
+
+/*HEADER*/
+#titular h1 {
+  font-weight: bold;
+}
+
+/*TARJETAS*/
+#tarjetas {
+  background-color: #17a2b8;
+}
+
+#tarjetas h2 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/*FOOTER*/
+#img_footer {
+  background-color: #e83e8c;
+}
+
+#img_footer img {
+  height: 100px;
+}

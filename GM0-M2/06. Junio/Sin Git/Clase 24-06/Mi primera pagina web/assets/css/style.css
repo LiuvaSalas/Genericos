@@ -1,0 +1,127 @@
+/*Configuración General*/
+body * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/*header*/
+
+header {
+    background-image: url(../img/post-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Open sans;
+    text-shadow: 0px 3px 3px black;
+    text-align: right;
+    color: white;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 1px;
+}
+
+/*body*/
+body {
+    text-align: center;
+    color: #000f08;
+    font-family: Open sans;
+}
+
+/*Nav*/
+/*Barra de navegacion*/
+nav {
+    background-color: lightgray;
+    color: whitesmoke;
+    text-align: start;
+    font-size: 20px;
+    padding: 20px 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+/*SECCION-1*/
+/* Ubicación */
+
+#ubicacion {
+    padding: 90px;
+}
+
+#ubicacion h2 {
+    font-size: 40px;
+    margin: 40px 0px 20px 0px;
+}
+
+#ubicacion p {
+    font-size: 25px;
+}
+
+/*SECCION-2*/
+/*Proxima Charla*/
+
+#proxima-charla {
+    background-color: #a4452c;
+    padding: 20px;
+    color: whitesmoke;
+    text-align: left;
+}
+
+#proxima-charla .wrapper {
+    width: 800px;
+    margin: auto;
+}
+
+.wrapper img {
+    width: 25%;
+}
+
+.wrapper .texto {
+    display: inline-block;
+    width: 70%;
+    margin-left: 4%;
+}
+
+.wrapper img .texto {
+    vertical-align: middle;
+}
+
+.texto h3 {
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.texto h4 {
+    font-size: 20px;
+    font-weight: ligther;
+}
+
+.texto h6 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.texto span {
+    font-size: 12px;
+}
+
+.texto p {
+    margin-top: 27px;
+    margin-bottom: 40px;
+}
+
+/*SECCION-3*/
+/*Eventos Anteriores*/

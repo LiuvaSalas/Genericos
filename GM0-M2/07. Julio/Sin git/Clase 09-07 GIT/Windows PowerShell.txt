@@ -1,0 +1,700 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Instale la versión más reciente de PowerShell para obtener nuevas características y mejoras. https://aka.ms/PSWindows
+
+PS C:\Users\Liuva> cd
+PS C:\Users\Liuva> pwd
+
+Path
+----
+C:\Users\Liuva
+
+
+PS C:\Users\Liuva> dir
+
+
+    Directorio: C:\Users\Liuva
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        04-04-2024     23:09                .conda
+d-----        19-07-2023      9:19                .continuum
+d-----        19-07-2023      9:22                .ipython
+d-----        17-08-2023     19:22                .jupyter
+d-----        22-07-2023     17:57                .matplotlib
+d-----        12-06-2024     18:56                .vscode
+d-r---        15-03-2021     18:50                3D Objects
+d-----        18-07-2023     21:23                anaconda3
+d-----        08-09-2020     21:08                Application Data
+d-r---        31-01-2023      8:24                Contacts
+d-r---        10-07-2024     11:54                Desktop
+d-r---        03-07-2024     18:26                Documents
+d-r---        10-07-2024     17:55                Downloads
+d-r---        31-01-2023      8:24                Favorites
+d-r---        31-01-2023      8:24                Links
+d-----        27-02-2024     11:57                Microsoft
+d-r---        31-01-2023      8:24                Music
+dar--l        17-06-2024     21:58                OneDrive
+d-r---        31-01-2023      8:24                Pictures
+d-----        17-06-2024     21:33                Postman
+d-r---        31-01-2023      8:24                Saved Games
+d-r---        31-01-2023      8:24                Searches
+d-r---        29-02-2024     10:58                Videos
+-a----        09-07-2024     22:00            219 .bash_history
+-a----        18-07-2023     21:03             43 .condarc
+-a----        09-07-2024     20:54            154 .gitconfig
+-a----        09-07-2024     20:49             20 .lesshst
+-a----        06-12-2019     10:31           1484 .python_history
+-a----        06-06-2023     19:48           5415 Actividad Colaborativa Clase 3.ipynb
+-a----        18-06-2024     21:31        8388608 BizagiDB_2024.mdf
+-a----        19-06-2024     20:42        8388608 BizagiDB_2024_log.ldf
+-a----        26-12-2019     17:57       17761912 edb_psqlodbc.exe
+-a----        26-12-2019     17:58       36713487 postgresql_11.exe
+
+
+PS C:\Users\Liuva> ^C
+PS C:\Users\Liuva> ^C
+PS C:\Users\Liuva>
+PS C:\Users\Liuva> cd Downloads
+PS C:\Users\Liuva\Downloads> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12-10-2023     13:54                .ipynb_checkpoints
+d-----        18-06-2023     18:33                archive
+d-----        18-06-2023     18:43                archive (4)
+d-----        18-06-2024     20:58                es-ES
+d-----        03-10-2023     18:45                ilovepdf_pages-to-jpg
+d-----        29-02-2024     11:02                KMSAuto-Net
+d-----        25-08-2021     13:20                __MACOSX
+-a----        08-07-2024     17:03           1436 .Rhistory
+-a----        10-08-2022     17:59        5226357 Analisis_Fuga.pptx
+-a----        28-02-2022      9:25         652583 Backups y Respaldo ALLPRESS.pdf
+-a----        10-07-2024      9:58         216692 Birthday SA  (1).xlsx
+-a----        11-05-2023     10:05           1674 bizagi-chapmandigital.pem
+-a----        14-05-2024     16:33        3471181 Boleta Limatco 552467.pdf
+-a----        28-02-2022     14:38        3894690 CASA 91 MED FULL MF.pdf
+-a----        09-03-2020     13:32         322346 CATA.jfif
+-a----        20-02-2024     13:12          53349 CV LiuvaSalas.pdf
+-a----        20-03-2024     12:53          57151 CV Liuva_Salas.pdf
+-a----        03-07-2024     10:43         588117 fb908632-d4cb-4076-9255-9ec56b803744.jpg
+-a----        02-03-2020     12:13         305713 Logo allpress comunicación que importa.png
+-a----        22-02-2024     12:40          43531 Profile.pdf
+-a----        03-07-2024     12:49          28489 Ultimos_Movimientos_Nacional_VISA_8200_1720025350049.pdf
+-a----        03-07-2024     10:44         325457 WhatsApp Image 2024-07-03 at 10.43.24 AM.jpeg
+
+
+PS C:\Users\Liuva\Downloads> New-Item archivo
+
+
+    Directorio: C:\Users\Liuva\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10-07-2024     18:32              0 archivo
+
+
+PS C:\Users\Liuva\Downloads> New-Item archivo2.txt
+
+
+    Directorio: C:\Users\Liuva\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10-07-2024     18:33              0 archivo2.txt
+
+
+PS C:\Users\Liuva\Downloads> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12-10-2023     13:54                .ipynb_checkpoints
+d-----        18-06-2023     18:33                archive
+d-----        18-06-2023     18:43                archive (4)
+d-----        18-06-2024     20:58                es-ES
+d-----        03-10-2023     18:45                ilovepdf_pages-to-jpg
+d-----        29-02-2024     11:02                KMSAuto-Net
+d-----        25-08-2021     13:20                __MACOSX
+-a----        08-07-2024     17:03           1436 .Rhistory
+-a----        10-08-2022     17:59        5226357 Analisis_Fuga.pptx
+-a----        10-07-2024     18:32              0 archivo
+-a----        10-07-2024     18:33              0 archivo2.txt
+-a----        28-02-2022      9:25         652583 Backups y Respaldo ALLPRESS.pdf
+-a----        10-07-2024      9:58         216692 Birthday SA  (1).xlsx
+-a----        11-05-2023     10:05           1674 bizagi-chapmandigital.pem
+-a----        14-05-2024     16:33        3471181 Boleta Limatco 552467.pdf
+-a----        28-02-2022     14:38        3894690 CASA 91 MED FULL MF.pdf
+-a----        09-03-2020     13:32         322346 CATA.jfif
+-a----        20-02-2024     13:12          53349 CV LiuvaSalas.pdf
+-a----        20-03-2024     12:53          57151 CV Liuva_Salas.pdf
+-a----        03-07-2024     10:43         588117 fb908632-d4cb-4076-9255-9ec56b803744.jpg
+-a----        02-03-2020     12:13         305713 Logo allpress comunicación que importa.png
+-a----        22-02-2024     12:40          43531 Profile.pdf
+-a----        03-07-2024     12:49          28489 Ultimos_Movimientos_Nacional_VISA_8200_1720025350049.pdf
+-a----        03-07-2024     10:44         325457 WhatsApp Image 2024-07-03 at 10.43.24 AM.jpeg
+
+
+PS C:\Users\Liuva\Downloads> mkdir practicaterminal
+
+
+    Directorio: C:\Users\Liuva\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:35                practicaterminal
+
+
+PS C:\Users\Liuva\Downloads> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12-10-2023     13:54                .ipynb_checkpoints
+d-----        18-06-2023     18:33                archive
+d-----        18-06-2023     18:43                archive (4)
+d-----        18-06-2024     20:58                es-ES
+d-----        03-10-2023     18:45                ilovepdf_pages-to-jpg
+d-----        29-02-2024     11:02                KMSAuto-Net
+d-----        10-07-2024     18:35                practicaterminal
+d-----        25-08-2021     13:20                __MACOSX
+-a----        08-07-2024     17:03           1436 .Rhistory
+-a----        10-08-2022     17:59        5226357 Analisis_Fuga.pptx
+-a----        10-07-2024     18:32              0 archivo
+-a----        10-07-2024     18:33              0 archivo2.txt
+-a----        28-02-2022      9:25         652583 Backups y Respaldo ALLPRESS.pdf
+-a----        10-07-2024      9:58         216692 Birthday SA  (1).xlsx
+-a----        11-05-2023     10:05           1674 bizagi-chapmandigital.pem
+-a----        14-05-2024     16:33        3471181 Boleta Limatco 552467.pdf
+-a----        28-02-2022     14:38        3894690 CASA 91 MED FULL MF.pdf
+-a----        09-03-2020     13:32         322346 CATA.jfif
+-a----        20-02-2024     13:12          53349 CV LiuvaSalas.pdf
+-a----        20-03-2024     12:53          57151 CV Liuva_Salas.pdf
+-a----        03-07-2024     10:43         588117 fb908632-d4cb-4076-9255-9ec56b803744.jpg
+-a----        02-03-2020     12:13         305713 Logo allpress comunicación que importa.png
+-a----        22-02-2024     12:40          43531 Profile.pdf
+-a----        03-07-2024     12:49          28489 Ultimos_Movimientos_Nacional_VISA_8200_1720025350049.pdf
+-a----        03-07-2024     10:44         325457 WhatsApp Image 2024-07-03 at 10.43.24 AM.jpeg
+
+
+PS C:\Users\Liuva\Downloads> cd practicaterminal
+PS C:\Users\Liuva\Downloads\practicaterminal> pwd
+
+Path
+----
+C:\Users\Liuva\Downloads\practicaterminal
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> New-Item index.html
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10-07-2024     18:39              0 index.html
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10-07-2024     18:39              0 index.html
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> New-Item index.css index.js
+New-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'index.js'.
+En línea: 1 Carácter: 1
++ New-Item index.css index.js
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\Liuva\Downloads\practicaterminal> New-Item index.js
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10-07-2024     18:41              0 index.js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> New-Item index.css
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10-07-2024     18:41              0 index.css
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10-07-2024     18:41              0 index.css
+-a----        10-07-2024     18:39              0 index.html
+-a----        10-07-2024     18:41              0 index.js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> mkdir assets
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:43                assets
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:43                assets
+-a----        10-07-2024     18:41              0 index.css
+-a----        10-07-2024     18:39              0 index.html
+-a----        10-07-2024     18:41              0 index.js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> cd assets
+PS C:\Users\Liuva\Downloads\practicaterminal\assets> mkdir css
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal\assets
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:43                css
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal\assets> mkdir js
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal\assets
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:43                js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal\assets> mkdir img
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal\assets
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:43                img
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal\assets> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal\assets
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:43                css
+d-----        10-07-2024     18:43                img
+d-----        10-07-2024     18:43                js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal\assets> cd ..
+PS C:\Users\Liuva\Downloads\practicaterminal> pwd
+
+Path
+----
+C:\Users\Liuva\Downloads\practicaterminal
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:43                assets
+-a----        10-07-2024     18:41              0 index.css
+-a----        10-07-2024     18:39              0 index.html
+-a----        10-07-2024     18:41              0 index.js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> copy .\index.css .\assets\css\
+PS C:\Users\Liuva\Downloads\practicaterminal> copy .\index.js .\assets\js\
+PS C:\Users\Liuva\Downloads\practicaterminal> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:43                assets
+-a----        10-07-2024     18:41              0 index.css
+-a----        10-07-2024     18:39              0 index.html
+-a----        10-07-2024     18:41              0 index.js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> move .\index.js .\assets\js\
+move : No se puede crear un archivo que ya existe.
+En línea: 1 Carácter: 1
++ move .\index.js .\assets\js\
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\Liuva\...rminal\index.js:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\Liuva\Downloads\practicaterminal> move .\index.css .\assets\js\
+PS C:\Users\Liuva\Downloads\practicaterminal>
+PS C:\Users\Liuva\Downloads\practicaterminal> cd assets
+PS C:\Users\Liuva\Downloads\practicaterminal\assets> del img
+PS C:\Users\Liuva\Downloads\practicaterminal\assets> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal\assets
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:47                css
+d-----        10-07-2024     18:51                js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal\assets> cd..
+PS C:\Users\Liuva\Downloads\practicaterminal> notepad .\index.html
+PS C:\Users\Liuva\Downloads\practicaterminal>
+PS C:\Users\Liuva\Downloads\practicaterminal> git --version
+git version 2.45.2.windows.1
+PS C:\Users\Liuva\Downloads\practicaterminal> git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+core.editor="C:\Users\Liuva\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.name=liuva
+user.email=liuvasalas01@gmail.com
+PS C:\Users\Liuva\Downloads\practicaterminal> git config --global user.name "LiuvaSalas"
+PS C:\Users\Liuva\Downloads\practicaterminal> git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+core.editor="C:\Users\Liuva\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.name=LiuvaSalas
+user.email=liuvasalas01@gmail.com
+PS C:\Users\Liuva\Downloads\practicaterminal> git init
+Initialized empty Git repository in C:/Users/Liuva/Downloads/practicaterminal/.git/
+PS C:\Users\Liuva\Downloads\practicaterminal> dir
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:53                assets
+-a----        10-07-2024     18:57             12 index.html
+-a----        10-07-2024     18:41              0 index.js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> ls
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     18:53                assets
+-a----        10-07-2024     18:57             12 index.html
+-a----        10-07-2024     18:41              0 index.js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/
+        index.html
+        index.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Liuva\Downloads\practicaterminal> git add index.html
+PS C:\Users\Liuva\Downloads\practicaterminal> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/
+        index.js
+
+PS C:\Users\Liuva\Downloads\practicaterminal> git commit -m "primer commit
+>> "
+[main (root-commit) 4e1a1bc] primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+PS C:\Users\Liuva\Downloads\practicaterminal> git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/
+        index.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Liuva\Downloads\practicaterminal> git log
+commit 4e1a1bcece79f6e4e35c5126e21b327fff0707ff (HEAD -> main)
+Author: LiuvaSalas <liuvasalas01@gmail.com>
+Date:   Wed Jul 10 19:09:46 2024 -0400
+
+    primer commit
+PS C:\Users\Liuva\Downloads\practicaterminal> git add .
+PS C:\Users\Liuva\Downloads\practicaterminal> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   assets/css/index.css
+        new file:   assets/js/index.css
+        new file:   assets/js/index.js
+        new file:   index.js
+
+PS C:\Users\Liuva\Downloads\practicaterminal> del .\assets\js\index.css
+PS C:\Users\Liuva\Downloads\practicaterminal> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   assets/css/index.css
+        new file:   assets/js/index.css
+        new file:   assets/js/index.js
+        new file:   index.js
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    assets/js/index.css
+
+PS C:\Users\Liuva\Downloads\practicaterminal> git commit
+[main abc7e8d] Segundo commit
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 assets/css/index.css
+ create mode 100644 assets/js/index.css
+ create mode 100644 assets/js/index.js
+ create mode 100644 index.js
+PS C:\Users\Liuva\Downloads\practicaterminal> git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    assets/js/index.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Liuva\Downloads\practicaterminal> git log
+commit abc7e8db45b0da91ff8ffeef1c35e11d23c2c9eb (HEAD -> main)
+Author: LiuvaSalas <liuvasalas01@gmail.com>
+Date:   Wed Jul 10 19:13:32 2024 -0400
+
+    Segundo commit
+
+commit 4e1a1bcece79f6e4e35c5126e21b327fff0707ff
+Author: LiuvaSalas <liuvasalas01@gmail.com>
+Date:   Wed Jul 10 19:09:46 2024 -0400
+
+    primer commit
+PS C:\Users\Liuva\Downloads\practicaterminal> git add contact.html
+fatal: pathspec 'contact.html' did not match any files
+PS C:\Users\Liuva\Downloads\practicaterminal> add .
+add : El término 'add' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió
+correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ add .
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (add:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Liuva\Downloads\practicaterminal> git add .
+PS C:\Users\Liuva\Downloads\practicaterminal> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    assets/js/index.css
+
+PS C:\Users\Liuva\Downloads\practicaterminal> git log
+commit abc7e8db45b0da91ff8ffeef1c35e11d23c2c9eb (HEAD -> main)
+Author: LiuvaSalas <liuvasalas01@gmail.com>
+Date:   Wed Jul 10 19:13:32 2024 -0400
+
+    Segundo commit
+
+commit 4e1a1bcece79f6e4e35c5126e21b327fff0707ff
+Author: LiuvaSalas <liuvasalas01@gmail.com>
+Date:   Wed Jul 10 19:09:46 2024 -0400
+
+    primer commit
+PS C:\Users\Liuva\Downloads\practicaterminal> nano index.html
+nano : El término 'nano' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió
+correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ nano index.html
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (nano:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Liuva\Downloads\practicaterminal> git add .
+PS C:\Users\Liuva\Downloads\practicaterminal> git commit -m "tercer commit"
+[main 45c335b] tercer commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 assets/js/index.css
+PS C:\Users\Liuva\Downloads\practicaterminal> git log
+commit 45c335b3751a5112357c5a4300ca2478dc5ebf00 (HEAD -> main)
+Author: LiuvaSalas <liuvasalas01@gmail.com>
+Date:   Wed Jul 10 19:30:03 2024 -0400
+
+    tercer commit
+
+commit abc7e8db45b0da91ff8ffeef1c35e11d23c2c9eb
+Author: LiuvaSalas <liuvasalas01@gmail.com>
+Date:   Wed Jul 10 19:13:32 2024 -0400
+
+    Segundo commit
+
+commit 4e1a1bcece79f6e4e35c5126e21b327fff0707ff
+Author: LiuvaSalas <liuvasalas01@gmail.com>
+Date:   Wed Jul 10 19:09:46 2024 -0400
+
+    primer commit
+PS C:\Users\Liuva\Downloads\practicaterminal> git checkout
+PS C:\Users\Liuva\Downloads\practicaterminal> git checkout 4e1a1bc
+Note: switching to '4e1a1bc'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 4e1a1bc primer commit
+PS C:\Users\Liuva\Downloads\practicaterminal> git status
+HEAD detached at 4e1a1bc
+nothing to commit, working tree clean
+PS C:\Users\Liuva\Downloads\practicaterminal> ls
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10-07-2024     18:57             12 index.html
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> git checkout 45c335b
+Previous HEAD position was 4e1a1bc primer commit
+HEAD is now at 45c335b tercer commit
+PS C:\Users\Liuva\Downloads\practicaterminal> git status
+HEAD detached at 45c335b
+nothing to commit, working tree clean
+PS C:\Users\Liuva\Downloads\practicaterminal> ls
+
+
+    Directorio: C:\Users\Liuva\Downloads\practicaterminal
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-07-2024     19:40                assets
+-a----        10-07-2024     18:57             12 index.html
+-a----        10-07-2024     19:40              0 index.js
+
+
+PS C:\Users\Liuva\Downloads\practicaterminal> nano index.html
+nano : El término 'nano' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió
+correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ nano index.html
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (nano:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Liuva\Downloads\practicaterminal> git nano .\index.html
+git: 'nano' is not a git command. See 'git --help'.
+
+The most similar commands are
+        annotate
+        daemon
+PS C:\Users\Liuva\Downloads\practicaterminal> 45c335b

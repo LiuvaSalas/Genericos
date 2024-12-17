@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*body*/
+body {
+  font-family: "Roboto";
+  background-color: #ffffff;
+}
+
+/*barra de navegacion*/
+#navegacion {
+  background-color: #28a745;
+}
+
+/*cupones*/
+#cupones {
+  background-color: #ffffff;
+  color: #707070;
+}
+
+#cupones h3 {
+  color: #212529;
+}
+
+.ubicacion {
+  font-size: 13px;
+}
+
+#precios p {
+  display: inline-block;
+}
+
+.precio-oferta {
+  color: #28a745;
+}
+
+#mensajes {
+  background-color: #28a745;
+  color: white;
+}
+
+/*footer*/
+#img_footer {
+  background-color: #ffffff;
+  color: #707070;
+}
+
+#img_footer img {
+  height: 25px;
+}
